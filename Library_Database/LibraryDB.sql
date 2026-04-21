@@ -117,6 +117,10 @@ UPDATE Book
 SET Category = 'Tarih-Kurgu' 
 WHERE Title = 'Saatleri Ayarlama Enstitüsü';
 
+ALTER TABLE Staff RENAME COLUMN WorkShift TO Shift;
+
+ALTER TABLE Book DROP COLUMN Category;
+
 SELECT Title, Author, Category FROM Book;
 
 SELECT * FROM STAFF; 
